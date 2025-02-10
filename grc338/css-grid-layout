@@ -1,11 +1,4 @@
-/* CSS DOCUMENT */
-html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-} 
+/* NEW CODE ADDED AT THE TOP */
 
 /* Centering the content */
 div.container {
@@ -15,20 +8,11 @@ div.container {
 
 /* Make the header take the full width */
 header {
-    background-color: rgb(239, 142, 52);
-    padding: 1em 1em 1em;
-    line-height: 3em;
     width: 100%;
 }
 
 /* Make the footer take the full width */
 footer {
-    background-color: rgb(239, 142, 52);
-    color: rgb(250, 250, 250);
-    padding: .5em .5em .5em;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
     width: 100%;
     text-align: center;
 }
@@ -38,10 +22,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
-    padding: 2em .5em 2em;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 /* Adjusting the figure and image layout */
@@ -54,16 +34,12 @@ figure {
 /* Image styling */
 img {
     width: 70%;
-    display: block;
 }
 
 /* Caption positioning */
 figcaption {
     padding-left: 1em;
     flex: 1;
-    font-family: poppins, sans-serif;
-    font-weight: 400;
-    font-style: italic;
 }
 
 /* Two-column layout for ingredients and directions */
@@ -73,19 +49,29 @@ figcaption {
     gap: 2em;
 }
 
-/* Styling for section headers */
-h3 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(239, 142, 52);
-    font-size: 1.5em;
-    padding: 1em .5em .5em;
-    font-family: Sutro, serif;
-    font-weight: 300;
-    font-style: normal;
-    text-transform: uppercase;
+/* END OF NEW CODE */
+
+/* ORIGINAL CODE STARTS HERE */
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+} 
+
+img {
+    width: 100%;
+    display: block;
 }
 
-/* Header styling */
+header {
+    background-color: rgb(239, 142, 52);
+    padding: 1em 1em 1em;
+    line-height: 3em;
+}
+
 h1 {
     color: rgb(250, 250, 250);
     font-size: 3em;
@@ -102,7 +88,31 @@ h2 {
     font-style: normal;
 }
 
-/* List styling */
+h3 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(239, 142, 52);
+    font-size: 1.5em;
+    padding: 1em .5em .5em;
+    font-family: Sutro, serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+figcaption {
+    padding: .5em 1em .1em;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+main {
+    padding: 2em .5em 2em;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -118,3 +128,13 @@ ul li, ol li {
     margin-bottom: 0.8em;
     font-size: 1em;
 }
+
+footer {
+    background-color: rgb(239, 142, 52);
+    color: rgb(250, 250, 250);
+    padding: .5em .5em .5em;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
