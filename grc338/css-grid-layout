@@ -24,7 +24,7 @@ div.container {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Center layout properly */
+/* Keep the page layout centered */
 html, body {
     height: 100%;
     margin: 0;
@@ -103,6 +103,7 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3em; /* Adds spacing between image and text */
 }
 
 /* Image takes about 60% of the space */
@@ -126,8 +127,13 @@ figcaption {
 .recipe-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
-    margin-top: 2em;
+    gap: 3em; /* Adds spacing between columns */
+    padding-top: 2em; /* Adds more space between image and sections */
+}
+
+/* Ensure lists have proper spacing */
+.ingredients, .directions {
+    padding: 0 1.5em; /* Adds space inside each section */
 }
 
 /* --- LIST STYLES --- */
