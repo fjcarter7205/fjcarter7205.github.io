@@ -1,34 +1,20 @@
 /* NEW CODE ADDED AT THE TOP */
 
-/* Grey background for full-page effect */
-body {
-    background-color: #e0e0e0; /* Light grey background */
-    display: flex;
-    justify-content: center;
-}
-
-/* Center content with a white background */
+/* Centering the content */
 div.container {
     max-width: 60em;
-    width: 100%;
-    background-color: white;
-    padding: 2em;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
-/* Ensure full-width header and footer */
-header, footer {
+/* Make the header take the full width */
+header {
     width: 100%;
 }
 
-/* Set page layout for better centering */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: start;
+/* Make the footer take the full width */
+footer {
+    width: 100%;
+    text-align: center;
 }
 
 /* Layout for the main content */
@@ -151,5 +137,3 @@ footer {
     font-weight: 400;
     font-style: normal;
 }
-
-
