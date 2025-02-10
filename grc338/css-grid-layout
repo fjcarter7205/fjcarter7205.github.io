@@ -103,4 +103,56 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3
+    margin-bottom: 3em; /* Adds spacing between image and text */
+}
+
+/* Image takes about 60% of the space */
+img {
+    width: 60%;
+    display: block;
+}
+
+/* Caption goes to the right of the image */
+figcaption {
+    width: 35%;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* --- INGREDIENTS & DIRECTIONS LAYOUT (1 COLUMN PER SECTION) --- */
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Forces Ingredients and Directions into two columns */
+    gap: 3em; /* Adds spacing between columns */
+    padding-top: 2em;
+    align-items: start; /* Aligns both sections properly */
+}
+
+/* Ensure both sections take up equal space */
+.ingredients, .directions {
+    width: 100%;
+}
+
+/* Add spacing inside sections */
+.ingredients ul, .directions ol {
+    padding-left: 1.5em;
+}
+
+/* Ensure lists align properly */
+.ingredients ul li, .directions ol li {
+    line-height: 1.8em;
+    margin-bottom: 0.8em;
+    font-size: 1em;
+}
+
+/* --- RESPONSIVE DESIGN (FOR SMALLER SCREENS) --- */
+@media (max-width: 768px) {
+    .recipe-container {
+        grid-template-columns: 1fr; /* Stacks them on small screens */
+        gap: 1.5em;
+    }
+}
