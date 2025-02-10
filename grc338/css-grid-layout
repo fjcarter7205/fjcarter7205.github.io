@@ -1,20 +1,35 @@
-/* NEW CODE ADDED AT THE TOP */
+/* CSS DOCUMENT */
 
-/* Centering the content */
+/* Make only the sides grey while keeping the header/footer orange */
+body {
+    background-color: #e0e0e0; /* Grey background */
+    display: flex;
+    justify-content: center;
+}
+
+/* Center content with a white background */
 div.container {
     max-width: 60em;
-    margin: auto;
+    width: 100%;
+    background-color: white; /* Ensures only the center is white */
+    padding: 2em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Make the header take the full width */
-header {
+/* Ensure full-width header and footer with original orange color */
+header, footer {
     width: 100%;
+    background-color: rgb(239, 142, 52); /* Keeps the original orange */
 }
 
-/* Make the footer take the full width */
-footer {
-    width: 100%;
-    text-align: center;
+/* Set page layout for proper centering */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 /* Layout for the main content */
@@ -67,7 +82,7 @@ img {
 }
 
 header {
-    background-color: rgb(239, 142, 52);
+    background-color: rgb(239, 142, 52); /* Keeps the orange header */
     padding: 1em 1em 1em;
     line-height: 3em;
 }
@@ -130,10 +145,11 @@ ul li, ol li {
 }
 
 footer {
-    background-color: rgb(239, 142, 52);
+    background-color: rgb(239, 142, 52); /* Keeps the orange footer */
     color: rgb(250, 250, 250);
     padding: .5em .5em .5em;
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
